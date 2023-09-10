@@ -1,8 +1,8 @@
 ---
-title: "Heapsort, why it's space constant?"
+title: "Heapsort, why it's efficient?"
 description: "The heapsort algorithm has O(n log n) time complexity. But it uses the heap data structure and has O(1) space complexity, why?"
 pubDate: "Sep 7 2023"
-heroImage: "/post_img.webp"
+heroImage: "/posts/heap_sort_hero.webp"
 badge: "Algorithm Complexity"
 ---
 
