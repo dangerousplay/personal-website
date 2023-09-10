@@ -4,7 +4,6 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
-import image from "@astrojs/image";
 import remarkMath from "remark-math";
 import rehypeMathjaxChtml from 'rehype-mathjax/chtml.js'
 
@@ -12,15 +11,9 @@ export const basePath = '/personal-website/';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://dangerousplay.github.io/personal-website",
+  site: 'https://dangerousplay.github.io',
   base: basePath,
-  integrations: [mdx(), sitemap(), tailwind(), image(
-    {
-      serviceEntryPoint: '@astrojs/image/sharp',
-      cacheDir: "./.cache/image",
-      logLevel: 'debug',
-    }
-  )],
+  integrations: [mdx(), sitemap(), tailwind()],
     markdown: {
         extendDefaultPlugins: true,
         remarkPlugins: [remarkMath],
