@@ -8,9 +8,12 @@ import image from "@astrojs/image";
 import remarkMath from "remark-math";
 import rehypeMathjaxChtml from 'rehype-mathjax/chtml.js'
 
+export const basePath = '/personal-website/';
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astrofy-template.netlify.app',
+  site: "https://dangerousplay.github.io/personal-website",
+  base: basePath,
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
